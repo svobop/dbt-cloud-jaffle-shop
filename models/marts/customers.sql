@@ -42,12 +42,12 @@ joined as (
         customer_orders_summary.lifetime_spend_pretax,
         customer_orders_summary.lifetime_tax_paid,
         customer_orders_summary.lifetime_spend,
+        1 as customer_dummy_column,
 
         case
             when customer_orders_summary.is_repeat_buyer then 'returning'
             else 'new'
-        end as customer_type,
-        1 as customer_dummy_column
+        end as customer_type
 
     from customers
 
