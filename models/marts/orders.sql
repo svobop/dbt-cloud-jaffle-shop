@@ -64,6 +64,7 @@ customer_order_count as (
 
     select
         *,
+        1 as order_dummy_column,
 
         row_number() over (
             partition by customer_id
