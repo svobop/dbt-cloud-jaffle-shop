@@ -14,7 +14,7 @@ renamed as (
         id as location_id,
 
         ---------- text
-        name as location_name,
+        name as location_name2,
 
         ---------- numerics
         tax_rate,
